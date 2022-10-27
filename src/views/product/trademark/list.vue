@@ -65,7 +65,6 @@
 </template>
 
 <script lang="ts">
-import { Row } from 'element-ui'
 import {reqTradeMarkList,reqAddOrUpdateTradeMark,reqDeleteTradeMark} from '@/api/product/trademark'
 export default {
   name: 'Trademark',

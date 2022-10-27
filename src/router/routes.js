@@ -77,9 +77,19 @@ export const constantRoutes = [
       {
         name:'User',
         path:'user/list',
+        name:'User',
         component:()=>import('@/views/apl/user/list.vue'),
         meta:{
           title:"用户管理",
+        },
+      },
+      {
+        name:'Role',
+        path:'role/list',
+        name:'Role',
+        component:()=>import('@/views/apl/role/list.vue'),
+        meta:{
+          title:"角色管理",
         },
       },
     ]
@@ -101,6 +111,14 @@ export const constantRoutes = [
         component:()=>import('@/views/product/trademark/list'),
         meta:{
           title:'品牌管理',
+        }
+      },
+      {
+        name:'Attr',
+        path:'/product/attr/list',
+        component:()=>import('@/views/product/attr/list'),
+        meta:{
+          title:'平台管理属性',
         }
       },
     ]

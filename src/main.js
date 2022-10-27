@@ -31,6 +31,10 @@ import './plugins/elements'
 // 后加的
 Vue.component(CommonCard.name,CommonCard)
 
+// 引入全局组件
+import Category from '@/components/Category'
+Vue.component(Category.name,Category)
+
 
 // 挂载到Vue原型对象上, 以便组件中直接可见
 Vue.prototype.$hasBP = hasBtnPermission
